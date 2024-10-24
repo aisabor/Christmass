@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+#imageContainer {
+    height: 50vh; /* 50% of the viewport height */
+}
+#imageContainer img {
+    height: 100%; /* Fill the container's height */
+    width: auto;  /* Maintain aspect ratio */
+}
+
+h1, h2 {
+    color: #4e8620;
+}
+h3{
+    color: rgb(12, 95, 95);
+}
+
+.btn{
+    color: wheat;
+    background-color: rgb(12, 95, 95);
+}
+#confirmationDetails {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+
+img {
+    max-width: 300px;
+    max-height: 300px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 20px;
+}
+
+#postcodeInput {
+    height: 40px;
+    width: 100%;
+    max-width: 400px;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h1 {
+    color: #4e8620;
+}
+
+.masonry-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    margin-top: 50px;
+}
+
+@media (max-width: 576px) {
+    .masonry-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.masonry-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.gallery-item {
+    
+    margin-bottom: 15px;
+    overflow: hidden; /* Ensure images fit within the item */
+    position: relative; /* Positioning context for the images */
+    width: auto; /* Set the width of the card */
+    height: auto; /* Set the height of the card */
+}
+.gallery-item img {
+    width: 100%; /* Make images take full width */
+    height: 100%; /* Make images take full height */
+    object-fit: cover; /* Ensures images maintain aspect ratio and cover area */
+}
+/* Styles for modal images */
+#modalImage {
+    max-width: 100%;
+    height: auto; /* Automatically adjust height */
+    max-height: 500px; /* Set a max height for modal images */
+}
